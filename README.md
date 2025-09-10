@@ -283,7 +283,7 @@ This project analyzes customer purchase transactions and builds predictive model
   ![(Plot Confusion)](output/figure/13_Confusion_Matrix_Comparison.jpg)
 
 ## Dashboard
-👉 Tableau Dashboard: [View Here](https://public.tableau.com/views/)
+👉 Tableau Dashboard: [View Here](https://public.tableau.com/views/E-commerceCustomerBehavior_17575174020140/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## 🚀 Key Insights (Examples)
 - Older customers (>30 years) tend to have higher purchase frequency but lower churn.  
