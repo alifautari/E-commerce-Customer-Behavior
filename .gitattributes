@@ -1,0 +1,16 @@
+# --- Force Jupyter Notebooks to be detected as Python ---
+*.ipynb linguist-language=Python
+
+# --- Ignore HTML files from language stats ---
+*.html linguist-detectable=false
+
+# --- Set default end-of-line to LF (cross-platform safety) ---
+* text=auto eol=lf
+
+# --- Treat common binary files as binary ---
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pkl binary
+*.h5 binary
