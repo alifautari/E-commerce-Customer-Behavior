@@ -284,3 +284,15 @@ This project analyzes customer purchase transactions and builds predictive model
 
 ## Dashboard
 👉 Tableau Dashboard: [View Here](https://public.tableau.com/views/)
+
+## 🚀 Key Insights (Examples)
+- Older customers (>30 years) tend to have higher purchase frequency but lower churn.  
+- Returns are more frequent in certain product categories (e.g., books, clothing).  
+- Logistic Regression with SMOTE improved recall significantly compared to baseline.  
+
+---
+
+## 📌 Next Steps
+- Experiment with advanced models (Random Forest, XGBoost).  
+- Build dashboard for real-time monitoring of churn.  
+- Deploy churn prediction API using Flask/Streamlit.
