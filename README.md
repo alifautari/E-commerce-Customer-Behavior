@@ -150,7 +150,7 @@ This project analyzes customer purchase transactions and builds predictive model
   plt.savefig("09_Return_Rate.jpg", bbox_inches='tight')
   plt.show()
   ```
-  ![(Return Rate per Product Category)](output/figure/09_Return_Rate)
+  ![(Return Rate per Product Category)](output/figure/09_Return_Rate.jpg)
 
 ### 4. Trend Analysis
 - **Monthly Total Purchase Amount** (time series trend of spending)
@@ -249,3 +249,35 @@ This project analyzes customer purchase transactions and builds predictive model
   ```
   ![(Top 10 High Value Customer-Product)](output/figure/"12_Top%2010_High_Valuer_Customer-Product.html)
 
+## 🤖 Predictive Modeling
+
+### Baseline Models
+- Logistic Regression
+  ```python
+  logreg = LogisticRegression(max_iter=1000)
+  logreg.fit(X_train_scaled, y_train)
+  results.append(evaluate("Baseline LogReg", logreg, X_test_scaled, y_test))
+  ```
+- Decision Tree
+  ```python
+  dtree = DecisionTreeClassifier(max_depth=5, random_state=42)
+  dtree.fit(X_train, y_train)
+  results.append(evaluate("Baseline DecisionTree", dtree, X_test, y_test))
+  ```
+
+### With SMOTE (Handling Imbalanced Churn)
+- Logistic Regression + SMOTE
+  ```python
+  logreg_smote = LogisticRegression(max_iter=1000)
+  logreg_smote.fit(X_train_res_scaled, y_train_res)
+  results.append(evaluate("SMOTE LogReg", logreg_smote, X_test_scaled, y_test))
+  ```
+- Decision Tree + SMOTE
+  ```python
+  dtree_smote = DecisionTreeClassifier(max_depth=5, random_state=42)
+  dtree_smote.fit(X_train_res, y_train_res)
+  results.append(evaluate("SMOTE DecisionTree", dtree_smote, X_test, y_test))
+  ```
+- Evaluation metrics: Accuracy, Precision, Recall, F1-score [Outputs](output/model/)
+- Plot Confusion
+  ![(Plot Confusion)](output/figure/13_Confusion_Matrix_Comparison.jpg)
