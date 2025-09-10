@@ -281,3 +281,6 @@ This project analyzes customer purchase transactions and builds predictive model
 - Evaluation metrics: Accuracy, Precision, Recall, F1-score [Outputs](output/model/)
 - Plot Confusion
   ![(Plot Confusion)](output/figure/13_Confusion_Matrix_Comparison.jpg)
+
+## Dashboard
+👉 Tableau Dashboard: [View Here](https://public.tableau.com/views/)
